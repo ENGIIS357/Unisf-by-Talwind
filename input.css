@@ -1,0 +1,16 @@
+@import "tailwindcss";
+ @custom-variant dark (&:where(.dark,.dark *));
+
+ @theme{
+
+    --color-primary:theme("colors.gray.50");
+    --color-color:theme("colors.gray.800");
+    --color-accent:theme("colors.blue.600");
+ }
+ @layer base{
+    .dark{
+    --color-primary: theme("colors.gray.800");
+    --color-color: theme("colors.gray.100");
+    --color-accent: theme("colors.blue.400");
+    }
+ }

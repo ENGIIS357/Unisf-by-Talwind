@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اليونيسف</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-primary text-gray-800">
+    
+    <!-- شريط التنقل -->
+    <header class="fixed top-0 left-0 right-0 bg-primary shadow-md z-50 h-24">
+        <nav class="container mx-auto px-4 h-full flex justify-between items-center">
+            <!-- الشعار -->
+            <div class="flex items-center gap-10">
+                <img src="imag/log.png" alt="شعار الموقع" class="h-12 w-auto">
+            </div>
+            <button id="toggle" class="z-1 mt-4 px-4 py-2 border rounded hover:bg-accent hover:text-amber-100">
+                toggle
+            </button>
+            
+            <!-- عناصر القائمة -->
+            <ul class="hidden md:flex space-x-6 justify-between p-4">
+                <li><a href="index.html" class="text-white hover:text-black font-semibold text-lg transition-colors p-4">الرئيسية</a></li>
+                <li><a href="#" class="text-white hover:text-black font-semibold text-lg transition-colors">من نحن</a></li>
+                <li><a href="pages/stories.html" class="text-white hover:text-black font-semibold text-lg transition-colors">قصص</a></li>
+                <li><a href="pages/contactus.html" class="text-white hover:text-black font-semibold text-lg transition-colors">اتصل بنا</a></li>
+            </ul>
+            
+            <!-- عناصر التحكم -->
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <!-- أيقونة البحث -->
+                <div class="text-white text-xl cursor-pointer hover:text-gray-200 transition-colors">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <!-- زر التبرع -->
+                <a href="#" class="bg-white text-[#1f2c81] px-4 py-2 rounded-full font-medium flex items-center gap-2 hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-heart"></i>
+                    <span>تبرع</span>
+                </a>
+                
+                <!-- زر الهامبرجر -->
+                <div class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer">
+                    <div class="w-full h-1 bg-white rounded-full transition-all"></div>
+                    <div class="w-full h-1 bg-white rounded-full transition-all"></div>
+                    <div class="w-full h-1 bg-white rounded-full transition-all"></div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- قائمة الهاتف المنزلقة -->
+        <div class="md:hidden fixed top-24 right-[-100%] w-72 h-screen bg-white shadow-lg p-8 transition-all duration-300 z-40">
+            <ul class="space-y-6">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600 text-lg block">الرئيسية</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 text-lg block">من نحن</a></li>
+                <li><a href="pages/stories.html" class="text-gray-700 hover:text-blue-600 text-lg block">قصص</a></li>
+                <li><a href="pages/contactus.html" class="text-gray-700 hover:text-blue-600 text-lg block">اتصل بنا</a></li>
+            </ul>
+            
+            <a href="#" class="mt-8 bg-[#e74c3c] text-white px-6 py-3 rounded-full font-medium flex items-center justify-center gap-2 hover:bg-[#c0392b] transition-colors">
+                <i class="fas fa-heart"></i>
+                تبرع الآن
+            </a>
+        </div>
+    </header>
+
+    <!-- الصورة الرئيسية -->
+    <div class="mt-24">
+        <img src="imag/12.jpeg" alt="صورة رئيسية" class="w-full h-auto">
+    </div>
+
+    <!-- آخر الأخبار والقصص -->
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold mb-8 text-center">آخر الأخبار والقصص</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- بطاقة 1 -->
+            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                <img src="imag/B.jpeg" alt="صورة الخبر" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h5 class="text-gray-600 font-medium mb-2">بيان صحفي 21 أيار / مايو 2025</h5>
+                <h2 class="text-lg font-semibold">بيان صحفي مشترك- منظمة الأمم المتحدة والأغذيه الزراعه برنامج الغذاء العالمي واليونسيف</h2>
+            </div>
+            
+            <!-- بطاقة 2 -->
+            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                <img src="imag/B3.jpeg" alt="صورة الخبر" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h5 class="text-gray-600 font-medium mb-2">بيان صحفي 22 حزيران / يونيو 2025</h5>
+                <h2 class="text-lg font-semibold">بيان صحفي مشترك - منظمة الأمم المتحدة الأغذية والزراعة - برنامج الغذاء العالمي واليونيسف</h2>
+            </div>
+            
+            <!-- بطاقة 3 -->
+            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                <img src="imag/B2.jpeg" alt="صورة الخبر" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h5 class="text-gray-600 font-medium mb-2">تحول مدرسة</h5>
+                <h2 class="text-lg font-semibold">من مكان مهمل الى مكان حيث يمكن الاحلام ان تصبح حقيقه</h2>
+            </div>
+            
+            <!-- بطاقة 4 -->
+            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                <img src="imag/B4.jpeg" alt="صورة الخبر" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h5 class="text-gray-600 font-medium mb-2">بيان صحفي 21 أيار / مايو 2025</h5>
+                <h2 class="text-lg font-semibold">بيان صحفي مشترك- منظمة الأمم المتحدة والأغذيه الزراعه برنامج الغذاء العالمي واليونسيف</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- التقارير والمنشورات -->
+    <div class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-8 text-center">التقارير والمنشورات</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- بطاقة 1 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                    <img src="imag/A1.jpeg" alt="صورة التقرير" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h2 class="text-lg font-semibold">فريق تمكين- الخظه الوطنية لتمكين وتنمية الشباب في البمن</h2>
+                </div>
+                
+                <!-- بطاقة 2 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                    <img src="imag/A2.jpeg" alt="صورة التقرير" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h2 class="text-lg font-semibold">تحليل الفقر متعددالابعاد لدى الاسر-اليمن</h2>
+                </div>
+                
+                <!-- بطاقة 3 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                    <img src="imag/A3.jpeg" alt="صورة التقرير" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h2 class="text-lg font-semibold">ازمة التغذيه في اليمن</h2>
+                </div>
+                
+                <!-- بطاقة 4 -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 h-[400px]">
+                    <img src="imag/A4.jpeg" alt="صورة التقرير" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h2 class="text-lg font-semibold">جدوى استخدام طاقه الرياح لإمدادات المياه في اليمن</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer class="bg-[#008bbf] text-white pt-10 pb-5">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!--  1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 border-r-4 border-white pr-3">الروابط السريعه</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-100 hover:text-white transition-colors text-lg"> الرئيسية</a></li>
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> من نحن</a></li>
+                        <li><a href="pages/stories.html" class="text-gray-100 hover:text-white transition-colors text-lg"> قصص</a></li>
+                    </ul>
+                </div>
+                
+                <!--  2 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 border-r-4 border-white pr-3">عن اليونسيف</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> اين نعمل </a></li>
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> التوطيف</a></li>
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> شركاؤنا</a></li>
+                    </ul>
+                </div>
+                
+                <!--  3 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 border-r-4 border-white pr-3">المركز الإعلامي</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> المجالات التركيز</a></li>
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> البحاث والتقارير</a></li>
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> اتخاذ إجراء</a></li>
+                    </ul>
+                </div>
+                
+                <!--  4 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 border-r-4 border-white pr-3">تواصل معنا</h3>
+                    <div class="flex space-x-4 mb-6 ">
+                        <a href="https://www.youtube.com/user/UNICEFYemen" class="text-gray-100 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/unicef_yemen/" class="text-gray-100 hover:text-white text-2xl " ><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/unicefyemen/" class="text-gray-100 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-100 hover:text-white transition-colors text-lg"> اتصل بنا </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- حقوق النشر -->
+            <div class="border-t border-gray-300 mt-8 pt-6 text-center text-gray-200">
+                <p>تسعى اليونسيف جاهدة إالى إعمال حقوق كل طفل وحماية من الأذى وكل اشكال التميز كي ينمو معافى ويتعلم فيحقق إمكاناته</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+<script src="add.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
